@@ -29,9 +29,9 @@ PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 #esac
 
 # enable bash completion in interactive shells
-#if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
-#    . /etc/bash_completion
-#fi
+if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
+    . /etc/bash_completion
+fi
 
 # sudo hint
 if [ ! -e "$HOME/.sudo_as_admin_successful" ] && [ ! -e "$HOME/.hushlogin" ] ; then
@@ -71,3 +71,12 @@ if [ "$TERM" != "dumb" ]; then
     eval "`dircolors -b`"
     alias ls='ls --color=auto'
 fi
+
+
+green=$(tput setaf 2)
+blue=$(tput setaf 4)
+bold=$(tput bold)
+red=$(tput setaf 1)
+reset=$(tput sgr0)
+GIT_STATUS=$(__git_ps1 " %s")
+PS1='\u@\[$green\]\h\[$reset\]:\w\[$blue\]$(__git_ps1)\[$reset\] \$ '
