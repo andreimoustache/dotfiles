@@ -62,3 +62,6 @@ if [ -x /usr/lib/command-not-found -o -x /usr/share/command-not-found/command-no
 		fi
 	}
 fi
+
+HISTSIZE=1000
+HISTFILESIZE=1000
