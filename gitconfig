@@ -1,0 +1,4 @@
+[alias]
+  st = status
+  co = checkout
+  lg = log --graph --pretty=oneline --abbrev-commit --decorate
