@@ -2,6 +2,8 @@
   st = status
   co = checkout
   lg = log --graph --pretty=oneline --abbrev-commit --decorate
+[core]
+  editor = vim
 [color]
   diff = auto
   status = auto
