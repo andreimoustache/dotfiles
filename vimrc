@@ -56,3 +56,11 @@ endif
 "Set line numbers
 set number
 
+"Tabs
+set expandtab			"Expand tabs to spaces
+set tabstop=2 shiftwidth=2	"Tabsize is 2 spaces
+set smarttab
+
+"Indentation
+set smartindent
+set autoindent
