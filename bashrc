@@ -63,8 +63,8 @@ if [ -x /usr/lib/command-not-found -o -x /usr/share/command-not-found/command-no
 	}
 fi
 
-HISTSIZE=1000
-HISTFILESIZE=1000
+HISTSIZE=10000
+HISTFILESIZE=10000
 
 # enable color support of ls and also add handy aliases
 if [ "$TERM" != "dumb" ]; then
