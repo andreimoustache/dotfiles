@@ -2,6 +2,7 @@
   st = status
   co = checkout
   lg = log --graph --pretty=oneline --abbrev-commit --decorate
+  #lg = log --graph --pretty=format:'%C(yellow)%h% %d%Creset %s %C(white)- %an, %ar%Creset' --decorate
 [core]
   editor = vim
 [color]
@@ -26,3 +27,5 @@
   added = green bold
   changed = yellow bold
   untracked = red
+[merge]
+  tool = meld
