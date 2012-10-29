@@ -13,7 +13,7 @@ runtime! debian.vim
 " Uncomment the next line to make Vim more Vi-compatible
 " NOTE: debian.vim sets 'nocompatible'.  Setting 'compatible' changes numerous
 " options, so any other options should be set AFTER setting 'compatible'.
-"set compatible
+set nocompatible
 
 " Vim5 and later versions support syntax highlighting. Uncommenting the next
 " line enables syntax highlighting by default.
@@ -64,3 +64,6 @@ set smarttab
 "Indentation
 set smartindent
 set autoindent
+
+"Pathogen
+call pathogen#infect()
